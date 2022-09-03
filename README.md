@@ -41,6 +41,8 @@ ACKNOWLEDGEMENTS
 - Other common operations (length, sort, concatenation, copying, in operator, search, utility functions, max/min, sum)
 - Nested lists, sublists (selection syntax, modifying)
 
+AT SOME POINT MENTION ARRAY/LIST RELATIONSHIP
+
 ## Comprehension Check
 
 ## Application
@@ -48,6 +50,8 @@ ACKNOWLEDGEMENTS
 # Tuples
 
 THINGS ABOUT TUPLES WILL GO HERE
+
+https://www.w3schools.com/python/python_tuples.asp
 
 ## Comprehension Check
 
