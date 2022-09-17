@@ -88,6 +88,10 @@ We can access specific elements in a list using an index operator (`[]`) and pos
 
 PYTHON EXAMPLE
 
+## List Methods
+
+TABLE WITH LIST METHODS
+
 ## Modifying Lists
 
 We can modify elements in a list using index and assignment operators.
@@ -119,8 +123,7 @@ Sorting, reversing (INPLACE)
 
 Summary statistics 
 
-Random/shuffling
-
+## Additional Resources
 
 More on arrays/lists (general):
 - Kenneth Leroy Busbee and Dave Braunschweig, "[Arrays and Lists](https://press.rebus.community/programmingfundamentals/chapter/arrays-and-lists/)" in *Programming Fundamentals*
@@ -128,22 +131,59 @@ More on arrays/lists (general):
 More on lists in Python:
 - [W3Schools, Python Lists](https://www.w3schools.com/python/python_lists.asp)
 
-More on Python list methods:
-- 
-
 ## Comprehension Check
 
 ## Application
 
 # Tuples
 
-THINGS ABOUT TUPLES WILL GO HERE
+- "Tuples are used to store multiple items in a single variable...A tuple is a collection which is ordered and unchangeable. Tuples are written with round brackets...and allow duplicate values" ([W3Schools, Python Tuples](https://www.w3schools.com/python/python_tuples.asp))
 
-https://www.w3schools.com/python/python_tuples.asp
+## Creating Tuples
+
+We can create a tuple in Python using the round bracket syntax `(())` or the `tuple()` method.
+
+```Python
+# creating a tuple using round brackets
+sample = ("apple", "banana", "blueberry")
+
+# checking data type
+type(sample)
+```
+
+```Python
+# creating tuple using tuple method
+sample2 = tuple(("apple", "banana", "blueberry"))
+
+# check data type
+type(sample2)
+```
+
+## Tuple Properties
+
+LEN FUNCTION
+
+Tuples are indexed, so we can access individual items using an index operator and value.
+
+```Python
+# access first item in sample tuple
+sample[0]
+```
+
+## Modifying Tuples
+
+MODIFYING TUPLES
+
+For more on tuples in Python:
+- [W3Schools, Python Tuples](https://www.w3schools.com/python/python_tuples.asp)
 
 ## Comprehension Check
 
 ## Application
+
+# Sets
+
+## Comprehension Check
 
 # Dictionaries
 
