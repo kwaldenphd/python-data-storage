@@ -1,4 +1,4 @@
-# Data Storage in Python (strings, lists, tuples, dictionaries)
+# Data Structures in Python
 
 CC STATEMENT
 
@@ -135,7 +135,7 @@ We can test for membership using the `in` and `not in` operators.
 
 The `in` and `not in` operators return Boolean `True` or `False` values.
 
-We can also use this idnex syntax with string objects.
+We can also use this index syntax with string objects.
 
 ```Python
 # create string variable
@@ -233,17 +233,213 @@ Each structure has its own specific vocabulary and syntax, but some common opera
 
 ## Strings
 
+"A string data type is traditionally a sequence of characters, either as a literal constant or as some kind of variable...A string is generally considered a data type and is often implemented as an array data structure of bytes (or words) that stores a sequence of elements, typically characters, using some character encoding" (Busbee and Braunschweig, "[String Data Type](https://press.rebus.community/programmingfundamentals/chapter/string-data-type/)")
 
+"Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters. However, Python does not have a character data type, a single character is simply a string with a length of 1. Square brackets can be used to access elements of the string" ([W3Schools, Python Strings](https://www.w3schools.com/python/python_strings.asp))
 
-- Structure big picture
-- Examples we’ve seen before
-- Creating them 
-- Methods (title)
-- Concatenation
-- Length/access
-- Other common operations (len, properties, sort, concatenation, in operator, search)
-  * LAY GROUNDWORK FOR ITERATION HERE
-  * Thread in if-else and comparison operators
+Python examples:
+```Python
+# creating a string variable
+x = "Hello World!"
+
+# checking data type
+type(x)
+```
+
+```Python
+# converting to a string data type
+y = 7
+y = str(y)
+
+# checking data type
+type(y)
+```
+
+Some Python string syntax we've seen previously:
+
+```Python
+# create string variable
+message = "Hello world!"
+
+# return number of characters in string
+len(message)
+
+# access first character in string
+message[0]
+
+# access last character in string
+message[-1]
+
+# test if character x is in string
+'x' in message # returns false
+
+# test if symbol % is NOT in string
+'%' not in message # returns true
+```
+
+We can use the `in` operator in combination with `if-then-else` logic:
+
+```Python
+# create string variable
+message = "Hello world!"
+
+# if-then-else logic testing for specific characters in the string
+if "!" in message:
+  print("An exclamation point is present in this string")
+  
+else:
+  print("An exclamation point is not present in this string")
+```
+
+Remember we can use concatenation to join or combine string objects.
+
+```Python
+# first and last name variables
+first = "Knute"
+last = "Rockne"
+
+# use concatenation to create full name
+name = first + " " + last
+print(name)
+```
+
+### String Methods
+
+Python includes a number of built-in methods we can use to interact with strings. Brief explanations and examples are provided for some common string methods.
+
+#### Capitalization
+
+- `.title()` (title case)
+- `.upper()`(upper case)
+- `.lower()` (lower case)
+
+```Python
+# create name variable
+name = "Knute Rockne
+
+# print in title case
+print(name.title())
+
+# print in lower case
+print(name.lower())
+
+# print in upper case
+print(name.upper())
+```
+
+#### Searching
+
+- `.count()` (returns number of times specific value appears in a string)
+- `.startswith()` (returns Boolean True/False value if string begins with specific value
+- `.endswith()` (returns Boolean True/False value if string ends with specific value)
+- `.find()` (returns index for specific value in string, searching left-to-right)
+- `.rfind()` (returns index for specific value in string, searching right-to-left)
+- `.index()` (returns index for specific value in string)
+- `.rfind()` (returns index for specific value in string, searching right-to-left)
+
+```Python
+# create color variable
+color = "chartreuse"
+
+# return number of e characters in string
+print(color.count("e")
+
+# return true/false if string begins with value
+print(color.startswith("e")) # returns false
+
+# return true/false if string ends with value
+print(color.endswith("e")) # returns true
+
+# returns position for first occurance of value in the string
+print(color.find("e")) # returns 6
+
+# returns index for first occurance of value in the string
+print(color.index("e")) # returns 6
+
+# returns position for first occurance of a value in the string searching right-to-left
+print(color.rfind("e")) # returns 1
+
+# returns index for first occurance of a value in the string searching right-to-left
+print(color.rindex("e")) # returns 1
+```
+
+We can also use these methods to search for a substring within a string.
+
+```Python
+# create string variable
+passage = "As there is no other school within more than a hundred miles, this college cannot fail to succeed. Before long, it will develop on a large scale. It will be one of the most powerful means for good in this country."
+
+# return true/false if string ends with substring
+print(passage.endswith("good")) # returns false
+
+# returns position for first occurance of substring
+print(passage.find("college"))
+```
+
+#### Modifying 
+
+Strings in Python are immutable- that is values in the string cannot be modified once it has been created and assigned to a variable. But Python include string methods that facilitate modifying a string to create a new string object.
+
+`.replace()` replaces a value in a string. Syntax: `.replace("OLD VALUE", "NEW VALUE")`
+
+`.split()` splits a string at a specific separator and returns a list. The default separator is a space or whitespace character. Syntax: `.split("SEPARATOR")`
+
+`.strip()` trims specific character(s) from a string. The default character `.strip()` removes is a whitespace character. Syntax: `.strip("CHARACTERS TO STRIP")`
+
+```Python
+# create string variable
+passage = "As there is no other school within more than a hundred miles, this college cannot fail to succeed. Before long, it will develop on a large scale. It will be one of the most powerful means for good in this country."
+
+# replace value in string
+modified = passage.replace("cannot", "can't")
+print(modified)
+
+# split string at separator
+sentences = passage.split(". ")
+print(sentences)
+
+# remove strip whitespace from string
+modified = passage.strip()
+print(modified)
+```
+
+For more on strings (general):
+- Kenneth Leroy Busbee and Dave Braunschweig, "[String Data Type](https://press.rebus.community/programmingfundamentals/chapter/string-data-type/)" in *Programming Fundamentals*
+
+More on strings in Python:
+- [W3Schools, Python Strings](https://www.w3schools.com/python/python_strings.asp)
+- [W3Schools, Python String Methods](https://www.w3schools.com/python/python_ref_string.asp)
+
+### Comprehension Check
+
+String properties
+
+Creating string, converting to string
+
+What method(s) could we use to accomplish X
+- capitalization
+- test for membership
+- access via index/return index
+
+### Application
+
+Q6: Write a program that converts integer, float, or boolean values to a string, using the str() function.
+
+Q7: Write a program that prompts the user to enter a 6-letter word, and then prints the first, third, and fifth letters of that word.
+
+Q8: Modify the program to have it search for other characters in the string. Does it always return the index number you expect? What index is returned if you ask for the index of the letter u (i.e., what happens when the desired character appears more than once in the string)?
+
+```Python
+# program you're modifying for Q8
+# assign string variable
+color = "turquoise"
+
+# get index number of q character
+index_number = color.index("q")
+
+# show index number as part of print statement
+print ("The index number for the letter q within the word " + color + " is " + index_number)
+```
 
 ### Comprehension Check
 
@@ -251,6 +447,111 @@ Each structure has its own specific vocabulary and syntax, but some common opera
 
 
 ## Lists
+
+"An array is a data structure consisting of a collection of elements (values or variables), each identified by at least one array index or key...In Python, the built-in array data structure is a list" (Busbee and Braunschweig, "[Arrays and Lists](https://press.rebus.community/programmingfundamentals/chapter/arrays-and-lists/)")
+- An list is a single-dimension array
+
+In Python, we can create lists using square brackets `[]` or the `list()` function.
+
+Python examples:
+```Python
+# creating a list of numbers using square brackets
+numbers = [1, 3, 5, 7, 9]
+
+# checking data type
+type(numbers)
+```
+
+```Python
+# creating a list of strings using the list function
+words = list(("apple", "banana", "blueberry", "cherry")) # note the double round bracket syntax
+
+# check data type
+type(words)
+```
+
+Some Python list syntax we've seen previously:
+
+Let's use the example of a list of strings:
+
+```Python
+# list of string objects
+fruits = ["apple", "banana", "blueberry", "cherry"]
+
+# check data type
+type(fruits)
+```
+
+We can determine the number of elements in the list using the `len()` function.
+
+```Python
+len(fruits)
+```
+
+Remember Python starts at `0` and counts left-to-right. We can access specific values using their position.
+
+```Python
+# access first value 
+fruits[0]
+
+# access second value
+fruits[1]
+
+# access third value
+fruits[2]
+```
+
+Python lists also support negative indexing- we can use negative index values to count right-to-left. 
+- NOTE: Negative indexing starts counting at `-1`
+
+```Python
+# access last value
+fruits[-1]
+
+# access next to last value
+fruits[-2]
+```
+
+We can also use the `.index()` method to output the position for specific values (if they are present in the structure).
+
+```Python
+# return index for cherry
+print("The index for cherry is ", fruits.index("cherry"))
+
+# return index for pear
+print("The index for pear is ", fruits.index("pear"))
+```
+
+The last line of the program returns an `IndexError` message because `pear` is not a value in the list.
+
+We can test for membership using the `in` and `not in` operators.
+
+```Python
+# test if apple is in list
+"apple" in fruits
+
+# test if blueberry is NOT in list
+"blueberry" not in fruits
+```
+
+A few other preliminary notes on lists in Python:
+- We can check the number of elements in a list using `len()` 
+- We can access specific elements in a list using an index operator (`[]`) and position (numeric value)
+- We can add values to a list using the `.append()`, `.insert()`, and `.extend()` methods
+- We can isolate elements in a list using `.pop()`
+- We can remove elements from a list using `.remove()` or `del`
+- We can test for membership using the `in` operator
+- We can sort elements in a list using `.sort()`, `sorted()`, and `.reverse()`
+- We can access descriptive statistics for list values using `sum()`, `max()`, and `min()`
+
+TABLE WITH LIST METHODS
+
+More on arrays/lists (general):
+- Kenneth Leroy Busbee and Dave Braunschweig, "[Arrays and Lists](https://press.rebus.community/programmingfundamentals/chapter/arrays-and-lists/)" in *Programming Fundamentals*
+
+More on lists in Python:
+- [W3Schools, Python Lists](https://www.w3schools.com/python/python_lists.asp)
+
 
 - Structure big picture
 - Examples we've seen before (composite variables)
