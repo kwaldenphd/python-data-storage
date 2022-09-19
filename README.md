@@ -472,23 +472,20 @@ type(words)
 
 Some Python list syntax we've seen previously:
 
-Let's use the example of a list of strings:
-
 ```Python
 # list of string objects
 fruits = ["apple", "banana", "blueberry", "cherry"]
 
 # check data type
 type(fruits)
-```
 
-We can determine the number of elements in the list using the `len()` function.
-
-```Python
+# determine number of elements in list
 len(fruits)
+
+# 
 ```
 
-Remember Python starts at `0` and counts left-to-right. We can access specific values using their position.
+We can access specific values using their position.
 
 ```Python
 # access first value 
@@ -499,12 +496,7 @@ fruits[1]
 
 # access third value
 fruits[2]
-```
 
-Python lists also support negative indexing- we can use negative index values to count right-to-left. 
-- NOTE: Negative indexing starts counting at `-1`
-
-```Python
 # access last value
 fruits[-1]
 
@@ -534,117 +526,277 @@ We can test for membership using the `in` and `not in` operators.
 "blueberry" not in fruits
 ```
 
-A few other preliminary notes on lists in Python:
-- We can check the number of elements in a list using `len()` 
-- We can access specific elements in a list using an index operator (`[]`) and position (numeric value)
-- We can add values to a list using the `.append()`, `.insert()`, and `.extend()` methods
-- We can isolate elements in a list using `.pop()`
-- We can remove elements from a list using `.remove()` or `del`
-- We can test for membership using the `in` operator
-- We can sort elements in a list using `.sort()`, `sorted()`, and `.reverse()`
-- We can access descriptive statistics for list values using `sum()`, `max()`, and `min()`
+### Nested Lists, or Lists With Sublists
 
-TABLE WITH LIST METHODS
-
-More on arrays/lists (general):
-- Kenneth Leroy Busbee and Dave Braunschweig, "[Arrays and Lists](https://press.rebus.community/programmingfundamentals/chapter/arrays-and-lists/)" in *Programming Fundamentals*
-
-More on lists in Python:
-- [W3Schools, Python Lists](https://www.w3schools.com/python/python_lists.asp)
-
-
-- Structure big picture
-- Examples we've seen before (composite variables)
-- Creating them
-- Length/access
-- Modifying (growing, deleting, inserting, appending)
-- Other common operations (length, sort, concatenation, copying, in operator, search, utility functions, max/min, sum)
-- Nested lists, sublists (selection syntax, modifying)
-
-- "An array is a data structure consisting of a collection of elements (values or variables), each identified by at least one array index or key...In Python, the built-in array data structure is a list" (Busbee and Braunschweig, "[Arrays and Lists](https://press.rebus.community/programmingfundamentals/chapter/arrays-and-lists/)")
-- An list is a single-dimension array
-
-### Creating Lists
-
-In Python, we can create lists using square brackets `[]` or the `list()` function.
-
-Python examples:
-```Python
-# creating a list of numbers using square brackets
-numbers = [1, 3, 5, 7, 9]
-
-# checking data type
-type(numbers)
-```
-
-```Python
-# creating a list of strings using the list function
-words = list(("apple", "banana", "blueberry", "cherry")) # note the double round bracket syntax
-
-# check data type
-type(words)
-```
-
-### List Properties
-
-We can check the number of values or elements in a list using the length function `len()`.
-
-PYTHON EXAMPLE
-
-We can access specific elements in a list using an index operator (`[]`) and position (numeric value).
-
-PYTHON EXAMPLE
+NESTED LIST / SUBLIST INFO GOES HERE
 
 ### List Methods
 
+#### Modifying
+
+Unlike strings, lists in Python are mutable, meaning they can be modified after they have been created.
+
+We can use the index and assignment operators (`[]` and `=`) to modify specific values.
+
+```Python
+# list of string objects
+fruits = ["apple", "banana", "blueberry", "cherry"]
+
+# modify second value
+fruits[1] = "peach"
+
+# show new list
+print(fruits)
+```
+
+We can add values to a list using `.append()`, `.insert()`, or `.extend()`.
+- `.append()` adds or appends a value to the end of a list
+- `.insert()` adds or inserts a value at a specific position
+- `.extend()` extends a list by adding specific elements to the end of the current list
+
+```Python
+# create list of numbers
+numbers = [1, 3, 5, 7, 9]
+
+# add value to end of list using append
+numbers.append(13)
+
+# show updated list
+print(numbers)
+```
+
+```Python
+# show updated list
+print(numbers)
+
+# insert value at specific position
+numbers.insert(4, 11)
+
+# show updated list
+print(numbers)
+```
+
+```Python
+# show updated list
+print(numbers)
+
+# create second list of number values
+num2 = [15, 17, 19]
+
+# add num2 to numbers using extend
+numbers.extend(num2)
+
+# show updated list
+print(numbers)
+```
+
+NOTE: for lists with string objects, `.extend()` works similarly to concatenation.
+
+We can remove values from a list using `.remove()`, `.pop()`, or `del`.
+- `.remove()` removes the first matching element from a list
+- `.pop()` removes an item at a specific position; if no index is supplied, last element is removed
+- `del` removes or deletes the value at a specific position
+
+```Python
+# show updated list
+print(numbers)
+
+# remove 19 using remove
+numbers.remove(19)
+
+# show updated list
+print(numbers)
+```
+
+```Python
+# show updated list
+print(numbers)
+
+# remove 17 using pop
+numbers.pop(-1)
+
+# show updated list
+print(numbers)
+```
+
+```Python
+# show updated list
+print(numbers)
+
+# remove 15 using del
+del numbers[7]
+
+# show updated list
+print(numbers)
+```
+
+#### Slicing
+
+SLICING DIAGRAM
+
+We can also modify a list using a technique called **list slicing**, selecting multiple values in the list using their position.
+
+In Python, we use a combination of index operators `[]` and index values for list slicing.
+
+```Python
+# list of strings
+dorms = ["alumni", "badin", "baumer", "breen-phillips", "carroll", "cavanaugh", "dillon", "duncan", "dunne", "farley", "fisher", "flaherty", "howard", "johnson", "keenan", "keough", "knott", "lewis", "lyons", "mcglinn", "morrissey", "oneill", "pangborn", "pasquerilla east", "pasquerilla west", "ryan", "st. edward's", "sigfried", "sorin", "stanford", "walsh", "welsh", "zahm"]
+
+# use list slicing to show first 5 strings
+print(dorms[0:3])
+```
+
+For more on list slicing in PythoN:
+- [Geeks for Geeks, "Python List Slicing"](https://www.geeksforgeeks.org/python-list-slicing/)
+
+
+#### Searching & Sorting
+
+We can search for values in a list using `.count()` or `.index()`.
+- `.count()` returns the number of times a value appears in the list
+- `.index()` returns the specific position for a list item
+
+```Python
+# show list
+print(dorms)
+
+# show nubmer of times howard appears in list
+print(dorms.count("howard"))
+
+# show index position for lewis
+print(dorms.index("lewis"))
+```
+
+We can also test for membership using the `in` and `not in` operators.
+
+```Python
+# tests if welsh is in dorms list
+"welsh" in dorms # returns True
+
+# tests if sophomore is not in dorms list
+"sophomore" not in dorms # returns True
+```
+
+We can sort the values in the list using `.sort()`, `sorted()`, and `.reverse()`.
+
+A few notes on sorting lists in Python.
+- Ascending order in Python is `[0, 1, 2, 3..]` and `[a, b, c, d..]`
+- Sorting a list **in-place** changes the underlying order of items in a list
+- Generating a sorted version of a list **does not** change the underlying item order
+
+So how do the sorting functions work in Python?
+- `.sort()` does not have any output- it sorts the list in place; we can set the `reverse` parameter to `True` to sort in descending order
+- `.sorted()` returns a sorted version of the list
+- `.reverse()` does not have any output- it reverse sorts the list in place
+
+
+```Python
+# show list of dorms
+print(dorms)
+
+# generate sorted version using sorted
+print(sorted(dorms))
+
+# change underlying order using a reverse sort
+dorms.sort(reverse=True) # remember sort does not have an output
+
+# show updated list
+print(dorms)
+```
+
+Another workflow for sorting list values in descending order:
+
+```Python
+# sort list alphabetically
+dorms.sort()
+
+# show updated list
+print(dorms)
+
+# reverse sort using reverse
+dorms.reverse()
+
+# show updated list
+print(dorms)
+```
+
+#### Summary Statistics
+
+Python includes a few built-in fucntion that calculate summary statistics for lists with numeric values.
+- `.max()` identifies the highest value in the list
+- `.min()` identifies the lowest value in the list
+- `.sum()` calculates the sum for all values in the list
+
+```Python
+# create list of numbers
+numbers = [1, 3, 5, 7, 9, 11, 13, 15, 17]
+
+# highest value
+print("The highest value in this list is ", str(max(numbers)))
+
+# lowest value
+print("The lowest value in this is list ", str(min(numbers)))
+
+# sum
+print("The sum of the values in this list is ", str(sum(numbers)))
+```
+
+#### Additional Resources
+
 TABLE WITH LIST METHODS
-
-### Modifying Lists
-
-We can modify elements in a list using index and assignment operators.
-
-PYTHON EXAMPLE
-
-We can add values to a list using the `.append()`, `.insert()`, and `.extend()` methods. 
-- `.append()` adds values to the end of a list
-- `.insert()` adds a value at a specific position
-- `.extend()` extends the numeric range for a list of integers
-
-PYTHON EXAMPLES
-
-We can isolate elements in a list using the `.pop()` method.
-
-PYTHON EXAMPLE
-
-We can remove elements from a list using the `del` statement.
-
-PYTHON EXAMPLE
-
-### Working With Lists
-
-in operator
-
-copying, concatenation
-
-Sorting, reversing (INPLACE)
-
-Summary statistics 
-
-### Additional Resources
 
 More on arrays/lists (general):
 - Kenneth Leroy Busbee and Dave Braunschweig, "[Arrays and Lists](https://press.rebus.community/programmingfundamentals/chapter/arrays-and-lists/)" in *Programming Fundamentals*
 
 More on lists in Python:
 - [W3Schools, Python Lists](https://www.w3schools.com/python/python_lists.asp)
+- [W3Schools, Python List Methods](https://www.w3schools.com/python/python_lists_methods.asp)
+
+### Looking Ahead
+
+NOD TO ITERATION/LOOPS HERE
 
 ### Comprehension Check
 
+List properties
+
+Creating list
+
+What method would we use to accomplish X:
+- Add to list
+- Remove from list
+- Sort list
+
+Nested list, list with  sublists- what's first value
+
 ### Application
+
+Q11: Create the list numbers with the following values: [[0, 1], [2, 3], [4, 5]].
+
+    What is the second element?
+    How would you change 4 to 'four'?
+    How would you change 1 to 'one'?
+    How would you print out each sub-list (one sub-list per line)?
+    How would you print out each number (one number per line)?
+
+Q12: Create your own list of numbers. Include your list code as part of this question answer. What is the length of your list? What is the number position for each of the items in your list? How would you return the value of the first item? How would you return the value of the last item?
+
+Q13: Using the same list from the previous question, write a program that includes the following steps or components:
+
+    Adds a new item to your list
+    Deletes an item from your list
+    Sorts your list in-place
+    Generates a sorted version of your list
+    Reverses your list in-place
+    Determines the min and max values for your list
+    Selects a list element at random
+    Shuffles your list
+
+Same thing with list of strings
 
 ## Tuples
 
-- "Tuples are used to store multiple items in a single variable...A tuple is a collection which is ordered and unchangeable. Tuples are written with round brackets...and allow duplicate values" ([W3Schools, Python Tuples](https://www.w3schools.com/python/python_tuples.asp))
+"Tuples are used to store multiple items in a single variable...A tuple is a collection which is ordered and unchangeable. Tuples are written with round brackets...and allow duplicate values" ([W3Schools, Python Tuples](https://www.w3schools.com/python/python_tuples.asp))
 
 ### Creating Tuples
 
