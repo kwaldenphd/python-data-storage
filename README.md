@@ -409,6 +409,7 @@ For more on strings (general):
 More on strings in Python:
 - [W3Schools, Python Strings](https://www.w3schools.com/python/python_strings.asp)
 - [W3Schools, Python String Methods](https://www.w3schools.com/python/python_ref_string.asp)
+- Allen Downey, Chapter 8 "Strings" in *[Think Python: How To Think Like a Computer Scientist](https://www.oreilly.com/library/view/think-python-2nd/9781491939406/)* (O'Reilly, 2016): 85-99.
 
 ### Comprehension Check
 
@@ -440,11 +441,6 @@ index_number = color.index("q")
 # show index number as part of print statement
 print ("The index number for the letter q within the word " + color + " is " + index_number)
 ```
-
-### Comprehension Check
-
-### Application
-
 
 ## Lists
 
@@ -481,8 +477,6 @@ type(fruits)
 
 # determine number of elements in list
 len(fruits)
-
-# 
 ```
 
 We can access specific values using their position.
@@ -785,6 +779,7 @@ More on arrays/lists (general):
 More on lists in Python:
 - [W3Schools, Python Lists](https://www.w3schools.com/python/python_lists.asp)
 - [W3Schools, Python List Methods](https://www.w3schools.com/python/python_lists_methods.asp)
+- Allen Downey, Chapter 10 "Lists" in *[Think Python: How To Think Like a Computer Scientist](https://www.oreilly.com/library/view/think-python-2nd/9781491939406/)* (O'Reilly, 2016): 107-124.
 
 ### Looking Ahead
 
@@ -859,112 +854,6 @@ Q13: Using the same list from the previous question, write a program that includ
     Shuffles your list
 
 Same thing with list of strings
-
-## Tuples
-
-"Tuples are used to store multiple items in a single variable...A tuple is a collection which is ordered and unchangeable. Tuples are written with round brackets...and allow duplicate values" ([W3Schools, Python Tuples](https://www.w3schools.com/python/python_tuples.asp))
-
-We can create a tuple in Python using the round bracket syntax `(())` or the `tuple()` method.
-
-```Python
-# creating a tuple using round brackets
-sample = ("apple", "banana", "blueberry")
-
-# checking data type
-type(sample)
-```
-
-```Python
-# creating tuple using tuple method
-sample = tuple(("apple", "banana", "blueberry"))
-
-# check data type
-type(sample)
-```
-
-Some of the methods we've already seen for lists and strings can also be used with tuples.
-
-```Python
-# return number of items in tuple
-len(sample)
-
-# access first item in tuple
-sample[0]
-
-# count number of times specific value appears in  tuple
-sample.count("apple")
-
-# return index for specific value
-sample.index("pear")
-```
-
-NOTE: The last line of code will return an error because `peach` does not appear in this tuple.
-
-For more on tuples in Python:
-- [W3Schools, Python Tuples](https://www.w3schools.com/python/python_tuples.asp)
-
-## Sets
-
-SET DIAGRAM
-
-A set is an unordered collection of unique objects. Sets are primarily used to see if an object or value is in the collection (membership). Python supports a number of set operations, but one of the primary uses is to test for membership.
-
-We can use the `in` operator to test for membership with a set.
-
-```Python
-# create a set
-s = set([0,1,2])
-
-# show set values
-s
-
-# test if 0 is in s
-0 in s # returns true
-
-# test if 7 is in s
-7 in s # returns false
-```
-
-We can add items to our set using `.add()` or remove them using `.remove()`.
-
-```Python
-# add values to set
-s.add(3)
-s.add(4)
-s.add(5)
-
-# show new set with values
-s
-```
-
-```Python
-# remove 1 number value from set
-s.remove(5)
-
-# show updated set
-s
-```
-
-For more on sets in Python:
-- [W3Schools, Python Sets](https://www.w3schools.com/python/python_sets.asp)
-
-### Comprehension Check (Tuples and Sets)
-
-Creating, accessing, testing for membership
-
-### Application (Tuples and Sets)
-
-Create tuple with something, do something with the tuple
-
-Q2: Create the set `s` with the following values: `[1, 3, 5, 7, 9]`
-<ol type="a">
-  <li>Test to see if the value <code>11</code> is a member of the set.</li>
-  <li>Test to see if the value <code>7</code> is a member of the set.</li>
-  <li>Add a value to the set.</li>
-  <li>Remove a value from the set.</li>
- </ol>
-
-Dive into documentation- compare across two structures, compare and also throw in lists
 
 ## Dictionaries
 
@@ -1075,6 +964,7 @@ for key value in numbers.items():
 
 For more on dictionaries in Python:
 - [W3Schools, Python Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp)
+- Allen Downey, Chapter 11 "Dictionaries" in *[Think Python: How To Think Like a Computer Scientist](https://www.oreilly.com/library/view/think-python-2nd/9781491939406/)* (O'Reilly, 2016): 125-138.
 
 ### Comprehension Check
 
@@ -1097,10 +987,132 @@ Q1: Create a dictionary on a topic of your choosing. Include at least 7 key-valu
     Print a list of all the values in your dictionary.
 
 
+## Tuples
+
+"Tuples are used to store multiple items in a single variable...A tuple is a collection which is ordered and unchangeable. Tuples are written with round brackets...and allow duplicate values" ([W3Schools, Python Tuples](https://www.w3schools.com/python/python_tuples.asp))
+
+We can create a tuple in Python using the round bracket syntax `(())` or the `tuple()` method.
+
+```Python
+# creating a tuple using round brackets
+sample = ("apple", "banana", "blueberry")
+
+# checking data type
+type(sample)
+```
+
+```Python
+# creating tuple using tuple method
+sample = tuple(("apple", "banana", "blueberry"))
+
+# check data type
+type(sample)
+```
+
+Some of the methods we've already seen for lists and strings can also be used with tuples.
+
+```Python
+# return number of items in tuple
+len(sample)
+
+# access first item in tuple
+sample[0]
+
+# count number of times specific value appears in  tuple
+sample.count("apple")
+
+# return index for specific value
+sample.index("pear")
+```
+
+NOTE: The last line of code will return an error because `peach` does not appear in this tuple.
+
+For more on tuples in Python:
+- [W3Schools, Python Tuples](https://www.w3schools.com/python/python_tuples.asp)
+- Allen Downey, Chapter 12 "Tuples" in *[Think Python: How To Think Like a Computer Scientist](https://www.oreilly.com/library/view/think-python-2nd/9781491939406/)* (O'Reilly, 2016): 139-150.
+
+## Sets
+
+SET DIAGRAM
+
+A set is an unordered collection of unique objects. Sets are primarily used to see if an object or value is in the collection (membership). Python supports a number of set operations, but one of the primary uses is to test for membership.
+
+We can use the `in` operator to test for membership with a set.
+
+```Python
+# create a set
+s = set([0,1,2])
+
+# show set values
+s
+
+# test if 0 is in s
+0 in s # returns true
+
+# test if 7 is in s
+7 in s # returns false
+```
+
+We can add items to our set using `.add()` or remove them using `.remove()`.
+
+```Python
+# add values to set
+s.add(3)
+s.add(4)
+s.add(5)
+
+# show new set with values
+s
+```
+
+```Python
+# remove 1 number value from set
+s.remove(5)
+
+# show updated set
+s
+```
+
+For more on sets in Python:
+- [W3Schools, Python Sets](https://www.w3schools.com/python/python_sets.asp)
+
+### Comprehension Check (Tuples and Sets)
+
+Creating, accessing, testing for membership
+
+### Application (Tuples and Sets)
+
+Create tuple with something, do something with the tuple
+
+Q2: Create the set `s` with the following values: `[1, 3, 5, 7, 9]`
+<ol type="a">
+  <li>Test to see if the value <code>11</code> is a member of the set.</li>
+  <li>Test to see if the value <code>7</code> is a member of the set.</li>
+  <li>Add a value to the set.</li>
+  <li>Remove a value from the set.</li>
+ </ol>
+
+Dive into documentation- compare across two structures, compare and also throw in lists
+
 # Putting It All Together
 
 TABLE COMPARISON
 
 CHALLENGE QUESTIONS
+
+Something with dorms and gender assignment (or is this really a for loop)
+
+User input and test for membership
+
+Something with even numbers (arithmetic operators and if-then)
+
+Something with user inputs and squares 
+
+## Additional Resources
+
+Allen Downey, *[Think Python: How To Think Like a Computer Scientist](https://www.oreilly.com/library/view/think-python-2nd/9781491939406/)* (O'Reilly, 2016).
+- Includes chapters on strings, lists, tuples, and dictionaries
+
+Section 3.1 from Chapter 3 "Built-in Data Structures, Functions, and Files" in Wes McKinney's *[Python for Data Analysis, 3rd edition](https://www.oreilly.com/library/view/python-for-data/9781098104023/)* (O'Reilly, 2022): 51-68.
 
 # Lab Notebook Questions
