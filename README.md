@@ -528,7 +528,41 @@ We can test for membership using the `in` and `not in` operators.
 
 ### Nested Lists, or Lists With Sublists
 
-NESTED LIST / SUBLIST INFO GOES HERE
+Lists can also contain other lists- this is referred to as nested lists or sub-lists.
+
+Syntax for selecting items or values within a nested list: `list_name[list_item_number][sublist_item_number]`
+
+```Python
+# create list with two sub-lists
+points = [[0, 1], [2, 3]]
+
+# show list
+points
+
+# access first item on list, which is a sublist
+points[0]
+
+# access first item WITHIN second item on list
+points[1][0]
+```
+
+We would also use the double bracket syntax to modify a sublist or a value within a sublist.
+
+```Python
+# add sublist to list
+points.append([3, 5])
+
+# show updated list
+points
+```
+
+```Python
+# modify second value in last sublist
+points[2][1] = 4
+
+# show updated list
+points
+```
 
 ### List Methods
 
@@ -754,7 +788,39 @@ More on lists in Python:
 
 ### Looking Ahead
 
-NOD TO ITERATION/LOOPS HERE
+In an upcoming lab, we'll look at how to create looping structures (or code blocks that repeat under specific conditions). But for now, let's take a step back and think about how Python interacts with or treats the items in our list.
+
+For example, when we're using the `in` operator, how does Python test for membership (i.e. see if the value we're looking for is located in the list)? Python accomplishes this via **iteration**, which involves iterating over each item in the list. 
+
+So Python starts at the first item in the list (index position `0`), and goes through each item on the list (left to right) until it reaches the end of the list. Again, we will have a whole lab on iteration and loops, but a few quick examples for now just to illustrate the concept of iteration.
+
+We can use a **`for` loop** to iterate over the items in a list.
+
+```Python
+# list of numbers
+numbers = [1, 3, 5, 7, 9, 11, 13, 15, 17]
+
+# sample for loop that iterates over items in list and outputs each number
+for number in numbers:
+ print(number)
+```
+
+We can also nest `if` statements in a `for` loop:
+```Python
+# list of numbers
+numbers = [1, 3, 5, 7, 9, 11, 13, 15, 17]
+
+# for loop that iterates over numbers
+for number in numbers:
+  if number < 10:
+    print(str(number) + " is less than 10")
+  elif number > = 10 and number < 15:
+    print(str(number) + " is greater than or equal to 10 and less than 15")
+  else:
+    print(str(number) + " is greater than 15")
+```
+
+Again, more to come on loops and iteration.
 
 ### Comprehension Check
 
@@ -798,8 +864,6 @@ Same thing with list of strings
 
 "Tuples are used to store multiple items in a single variable...A tuple is a collection which is ordered and unchangeable. Tuples are written with round brackets...and allow duplicate values" ([W3Schools, Python Tuples](https://www.w3schools.com/python/python_tuples.asp))
 
-### Creating Tuples
-
 We can create a tuple in Python using the round bracket syntax `(())` or the `tuple()` method.
 
 ```Python
@@ -812,37 +876,91 @@ type(sample)
 
 ```Python
 # creating tuple using tuple method
-sample2 = tuple(("apple", "banana", "blueberry"))
+sample = tuple(("apple", "banana", "blueberry"))
 
 # check data type
-type(sample2)
+type(sample)
 ```
 
-### Tuple Properties
-
-LEN FUNCTION
-
-Tuples are indexed, so we can access individual items using an index operator and value.
+Some of the methods we've already seen for lists and strings can also be used with tuples.
 
 ```Python
-# access first item in sample tuple
+# return number of items in tuple
+len(sample)
+
+# access first item in tuple
 sample[0]
+
+# count number of times specific value appears in  tuple
+sample.count("apple")
+
+# return index for specific value
+sample.index("pear")
 ```
 
-### Modifying Tuples
-
-MODIFYING TUPLES
+NOTE: The last line of code will return an error because `peach` does not appear in this tuple.
 
 For more on tuples in Python:
 - [W3Schools, Python Tuples](https://www.w3schools.com/python/python_tuples.asp)
 
-### Comprehension Check
-
-### Application
-
 ## Sets
 
-### Comprehension Check
+SET DIAGRAM
+
+A set is an unordered collection of unique objects. Sets are primarily used to see if an object or value is in the collection (membership). Python supports a number of set operations, but one of the primary uses is to test for membership.
+
+We can use the `in` operator to test for membership with a set.
+
+```Python
+# create a set
+s = set([0,1,2])
+
+# show set values
+s
+
+# test if 0 is in s
+0 in s # returns true
+
+# test if 7 is in s
+7 in s # returns false
+```
+
+We can add items to our set using `.add()` or remove them using `.remove()`.
+
+```Python
+# add values to set
+s.add(3)
+s.add(4)
+s.add(5)
+
+# show new set with values
+s
+```
+
+```Python
+# remove 1 number value from set
+s.remove(5)
+
+# show updated set
+s
+```
+
+For more on sets in Python:
+- [W3Schools, Python Sets](https://www.w3schools.com/python/python_sets.asp)
+
+### Comprehension Check (Tuples and Sets)
+
+### Application (Tuples and Sets)
+
+Create tuple with something, do something with the tuple
+
+Q2: Create the set `s` with the following values: `[1, 3, 5, 7, 9]`
+<ol type="a">
+  <li>Test to see if the value <code>11</code> is a member of the set.</li>
+  <li>Test to see if the value <code>7</code> is a member of the set.</li>
+  <li>Add a value to the set.</li>
+  <li>Remove a value from the set.</li>
+ </ol>
 
 ## Dictionaries
 
