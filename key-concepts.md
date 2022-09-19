@@ -20,8 +20,58 @@ For more on array structures:
 ## Dictionaries
 
 ## Index, Indexing
+- In Python, **indexing** allows us to refer to individual values in specific data structures using their position. NOTE: Python (and many other programming languages) are **zero-indexed**, which means counting for index positions begins at `0`.
+
+```Python
+# list of string objects
+fruits = ["apple", "banana", "blueberry", "cherry"]
+
+# access first value 
+fruits[0]
+
+# access second value
+fruits[1]
+
+# access third value
+fruits[2]
+```
+
+Python lists also support negative indexing- we can use negative index values to count right-to-left. 
+- NOTE: Negative indexing starts counting at `-1`
+
+```Python
+# access last value
+fruits[-1]
+
+# access next to last value
+fruits[-2]
+```
+
+We can also use the `.index()` method to output the position for specific values (if they are present in the structure).
+
+```Python
+# return index for cherry
+print("The index for cherry is ", fruits.index("cherry"))
+
+# return index for pear
+print("The index for pear is ", fruits.index("pear"))
+```
 
 ## Iteration
+- "In iteration control structures, a statement or block is executed until the program reaches a certain state, or operations have been applied to every element of a collection" (Busbee and Braunschweig, "[Iteration Control Structures](https://press.rebus.community/programmingfundamentals/chapter/iteration-control-structures/)")
+
+When we're thinking about the types of data structures covered in this lab, when a Python program iterates over a data structure, it starts at the first item (index position `0`) and goes through each item (left to right) until it reaches the last value. 
+
+Sample `for` loop that illustrates iteration:
+
+```Python
+# list of numbers
+numbers = [1, 3, 5, 7, 9, 11, 13, 15, 17]
+
+# sample for loop that iterates over items in list and outputs each number
+for number in numbers:
+ print(number)
+```
 
 ## Key-Value Pairs
 
@@ -68,6 +118,10 @@ More on lists in Python:
 
 ## Nested Lists, Sublists
 
+## Sets
+- A set is an unordered collection of unique objects. Sets are primarily used to see if an object or value is in the collection (membership). Python supports a number of set operations, but one of the primary uses is to test for membership.
+- For more on sets in Python: [W3Schools, Python Sets](https://www.w3schools.com/python/python_sets.asp)
+
 ## Strings
 - "A string data type is traditionally a sequence of characters, either as a literal constant or as some kind of variable...A string is generally considered a data type and is often implemented as an array data structure of bytes (or words) that stores a sequence of elements, typically characters, using some character encoding" (Busbee and Braunschweig, "[String Data Type](https://press.rebus.community/programmingfundamentals/chapter/string-data-type/)")
 - "Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters. However, Python does not have a character data type, a single character is simply a string with a length of 1. Square brackets can be used to access elements of the string" ([W3Schools, Python Strings](https://www.w3schools.com/python/python_strings.asp))
@@ -79,15 +133,6 @@ x = "Hello World!"
 
 # checking data type
 type(x)
-```
-
-```Python
-# converting to a string data type
-y = 7
-y = str(y)
-
-# checking data type
-type(y)
 ```
 
 More on strings (general):
@@ -111,17 +156,10 @@ type(sample)
 
 ```Python
 # creating tuple using tuple method
-sample2 = tuple(("apple", "banana", "blueberry"))
+sample = tuple(("apple", "banana", "blueberry"))
 
 # check data type
-type(sample2)
-```
-
-Tuples are indexed, so we can access individual items using an index operator and value.
-
-```Python
-# access first item in sample tuple
-sample[0]
+type(sample)
 ```
 
 Additional resources:
