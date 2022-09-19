@@ -950,6 +950,8 @@ For more on sets in Python:
 
 ### Comprehension Check (Tuples and Sets)
 
+Creating, accessing, testing for membership
+
 ### Application (Tuples and Sets)
 
 Create tuple with something, do something with the tuple
@@ -962,19 +964,143 @@ Q2: Create the set `s` with the following values: `[1, 3, 5, 7, 9]`
   <li>Remove a value from the set.</li>
  </ol>
 
+Dive into documentation- compare across two structures, compare and also throw in lists
+
 ## Dictionaries
 
-- Big picture concept
-- Structure
-- Creating
-- Accessing
-- Modifying
-- More iteration/loop groundwork with keys, items, values methods
+Python stores associate arrays using the **dictionary** data structure. Python dictionaries consist of key-value pairs, where the key is working as an identifier or index. To put that another way, a dictionary is a mapping between a set of indeces (keys) and a set of values. Each key maps to a value, and the association of a key and a value is called a **key-value pair**.
+
+Some dictionary syntax we encountered previously in this lab>
+
+```Python
+# create dictionary
+english_to_french = {
+  'one': 'un',
+  'two': 'deux',
+  'three': 'trois',
+  'four': 'quatre',
+  'five': 'cinq'
+}
+
+# check data type
+type(english_to_french)
+```
+
+We can also create a dictionary using the `dict()` function.
+```Python
+# create dictionary
+english_to_french = dict({
+  'one': 'un',
+  'two': 'deux',
+  'three': 'trois',
+  'four': 'quatre',
+  'five': 'cinq'
+}
+
+# check data type
+type(english_to_french)
+```
+
+We can use the index operator (`[]`) and key values to select specific values in the dictionary.
+
+```Python
+# access value for one key
+english_to_french['one']
+
+# access value for five key
+english_to_french['five']
+
+# access value for asdf key
+english_to_french['asdf']
+```
+
+The last line will return a `KeyError` because `asdf` is not a key in this dictionary.
+
+We can use the `.keys()` and `.values()` methods to output all of the keys or values in a dictionary.
+
+```Python
+# output keys
+print(english_to_french.keys())
+
+# output values
+print(english_to_french.values())
+```
+
+We can also use iteration to output the keys or values in a dictionary. Let's say we want to iterate by keys through our dictionary.
+
+We can use a `for` loop to tell Python "`FOR` each key-value pair in my dictionary...do this thing!"
+
+An example that prints out the key for each key-value pair:
+
+```Python
+# for loop that outputs keys
+for key in english_to_french.keys():
+  print(key)
+```
+
+We can also iterate over key-value pairs, using the `.items()` method.
+
+```Python
+# for loop that outputs key-value pairs using items
+for key, value, in english_to_french.items():
+  print(key, value)
+```
+
+Again, more on iteration in an upcoming lab.
+
+### Modifying 
+
+We can modify values in our dictionary using the index `[]` and assignment `=` operators. This is also the workflow we would use to add values to a dictionary.
+
+```Python
+# create new dictionary
+numbers = {
+  '1': 'one',
+  '2': 'two',
+  '3': 'five'
+}
+
+# modify value for 3 key
+numbers['3'] = 'three'
+
+# add key-value pairs to dictionary
+numbers['4'] = 'four'
+numbers['5'] = 'five'
+numbers['6'] = 'six'
+
+# show updated dictionary
+for key value in numbers.items():
+  print(key, value)
+```
+
+For more on dictionaries in Python:
+- [W3Schools, Python Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp)
 
 ### Comprehension Check
 
+Terminology, conceptual framework
+
+Creating them
+
+Syntax for ...
+- Accessing
+- Modifying
+- Adding
+
 ### Application
 
+Q1: Create a dictionary on a topic of your choosing. Include at least 7 key-value pairs.
+
+    Add new elements to your dictionary.
+    Update an element in your dictionary.
+    Print a list of all the keys in your dictionary.
+    Print a list of all the values in your dictionary.
+
+
 # Putting It All Together
+
+TABLE COMPARISON
+
+CHALLENGE QUESTIONS
 
 # Lab Notebook Questions
