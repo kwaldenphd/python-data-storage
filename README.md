@@ -1079,7 +1079,7 @@ For more on tuples in Python:
 
 ## Sets
 
-<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_sets.jpg?raw=true" width="500"></p>
+<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_Sets.jpg?raw=true" width="500"></p>
 
 A set is an unordered collection of unique objects. Sets are primarily used to see if an object or value is in the collection (membership). Python supports a number of set operations, but one of the primary uses is to test for membership.
 
