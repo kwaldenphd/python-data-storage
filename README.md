@@ -256,7 +256,7 @@ print(english_to_french.values())
 <table>
  <tr><td>
 <img src="https://github.com/kwaldenphd/internet/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
-  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSexiph4YBLk_cvOK6dt0C_4qfiFZ0RfvxUYJFWFdL83msZo_g/viewform?usp=sf_link">Computer Networks Comprehension Check</a></td>
+  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLScSkaWhsSyESi3YFkRs07jWDAvdkxtRwn9ZktVVlr4X829kDw/viewform?usp=sf_link">Linear & Associative Arrays Comprehension Check</a></td>
   </tr>
   </table>
 
@@ -468,7 +468,7 @@ More on strings in Python:
 <table>
  <tr><td>
 <img src="https://github.com/kwaldenphd/internet/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
-  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSexiph4YBLk_cvOK6dt0C_4qfiFZ0RfvxUYJFWFdL83msZo_g/viewform?usp=sf_link">Computer Networks Comprehension Check</a></td>
+  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSdFMybseRW8-rommWKphdCFBgqWtpxCY1z8wT2_qk3NaJ8awQ/viewform?usp=sf_link">Strings in Python Comprehension Check</a></td>
   </tr>
   </table>
 
@@ -880,7 +880,7 @@ Again, more to come on loops and iteration.
 <table>
  <tr><td>
 <img src="https://github.com/kwaldenphd/internet/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
-  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSexiph4YBLk_cvOK6dt0C_4qfiFZ0RfvxUYJFWFdL83msZo_g/viewform?usp=sf_link">Computer Networks Comprehension Check</a></td>
+  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSdJ6e9GsPUCYx3EVw-n9ajIGUo0zAJOEGolkfgNg4aVT0Ix8A/viewform?usp=sf_link">Lists in Python Comprehension Check</a></td>
   </tr>
   </table>
 
@@ -1038,7 +1038,7 @@ For more on dictionaries in Python:
 <table>
  <tr><td>
 <img src="https://github.com/kwaldenphd/internet/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
-  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSexiph4YBLk_cvOK6dt0C_4qfiFZ0RfvxUYJFWFdL83msZo_g/viewform?usp=sf_link">Computer Networks Comprehension Check</a></td>
+  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLScf-FDL2IyVOf0Kj3knOZukP__rcAZuCiukTmFUQDXz8KffMA/viewform?usp=sf_link">Dictionaries in Python Comprehension Check</a></td>
   </tr>
   </table>
 
@@ -1155,7 +1155,7 @@ For more on sets in Python:
 <table>
  <tr><td>
 <img src="https://github.com/kwaldenphd/internet/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
-  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSexiph4YBLk_cvOK6dt0C_4qfiFZ0RfvxUYJFWFdL83msZo_g/viewform?usp=sf_link">Computer Networks Comprehension Check</a></td>
+  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSf63bUSp3wlTnPz_ZTGCKjW-uotPYYD6FaOH9R3DqtFJPY_hg/viewform?usp=sf_link">Tuples and Sets in Python Comprehension Check</a></td>
   </tr>
   </table>
 
