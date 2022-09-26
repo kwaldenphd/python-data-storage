@@ -253,6 +253,13 @@ print(english_to_french.values())
 
 ## Comprehension Check
 
+<table>
+ <tr><td>
+<img src="https://github.com/kwaldenphd/internet/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
+  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSexiph4YBLk_cvOK6dt0C_4qfiFZ0RfvxUYJFWFdL83msZo_g/viewform?usp=sf_link">Computer Networks Comprehension Check</a></td>
+  </tr>
+  </table>
+
 ## Application
 
 # Data Structures in Python
@@ -457,6 +464,13 @@ More on strings in Python:
 - Allen Downey, Chapter 8 "Strings" in *[Think Python: How To Think Like a Computer Scientist](https://www.oreilly.com/library/view/think-python-2nd/9781491939406/)* (O'Reilly, 2016): 85-99.
 
 ### Comprehension Check
+
+<table>
+ <tr><td>
+<img src="https://github.com/kwaldenphd/internet/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
+  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSexiph4YBLk_cvOK6dt0C_4qfiFZ0RfvxUYJFWFdL83msZo_g/viewform?usp=sf_link">Computer Networks Comprehension Check</a></td>
+  </tr>
+  </table>
 
 String properties
 
@@ -863,6 +877,13 @@ Again, more to come on loops and iteration.
 
 ### Comprehension Check
 
+<table>
+ <tr><td>
+<img src="https://github.com/kwaldenphd/internet/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
+  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSexiph4YBLk_cvOK6dt0C_4qfiFZ0RfvxUYJFWFdL83msZo_g/viewform?usp=sf_link">Computer Networks Comprehension Check</a></td>
+  </tr>
+  </table>
+
 List properties
 
 Creating list
@@ -1014,6 +1035,13 @@ For more on dictionaries in Python:
 
 ### Comprehension Check
 
+<table>
+ <tr><td>
+<img src="https://github.com/kwaldenphd/internet/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
+  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSexiph4YBLk_cvOK6dt0C_4qfiFZ0RfvxUYJFWFdL83msZo_g/viewform?usp=sf_link">Computer Networks Comprehension Check</a></td>
+  </tr>
+  </table>
+
 Terminology, conceptual framework
 
 Creating them
@@ -1123,6 +1151,13 @@ For more on sets in Python:
 - [W3Schools, Python Sets](https://www.w3schools.com/python/python_sets.asp)
 
 ### Comprehension Check (Tuples and Sets)
+
+<table>
+ <tr><td>
+<img src="https://github.com/kwaldenphd/internet/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
+  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSexiph4YBLk_cvOK6dt0C_4qfiFZ0RfvxUYJFWFdL83msZo_g/viewform?usp=sf_link">Computer Networks Comprehension Check</a></td>
+  </tr>
+  </table>
 
 Creating, accessing, testing for membership
 
