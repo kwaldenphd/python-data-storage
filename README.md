@@ -110,9 +110,7 @@ Each structure has its own specific vocabulary and syntax, but some common opera
 
 ### Index/Indexing and Counting in Python
 
-DIAGRAM
-
-<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_Data_Structures.png?raw=true" width="500"></p>
+<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Indexing.PNG?raw=true" width="500"></p>
 
 In Python, **indexing** allows us to refer to individual values in specific data structures using their position.
 
@@ -206,9 +204,7 @@ message[-1]
 
 ## Associative Arrays
 
-DIAGRAM
-
-<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_Data_Structures.png?raw=true" width="500"></p>
+<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Associative_Arrays.png?raw=true" width="500"></p>
 
 The other primary type of array we can encounter is an **associative array**, "an abstract data type that stores a collection of (key, value) pairs, such that each possible key appears at most once in the collection" ([Wikpedia, Associative Array](https://en.wikipedia.org/wiki/Associative_array))
 
@@ -709,9 +705,7 @@ print(numbers)
 
 #### Slicing
 
-SLICING DIAGRAM
-
-<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_Array_Comparison.png?raw=true" width="500"></p>
+<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_List_Slicing.png?raw=true" width="500"></p>
 
 We can also modify a list using a technique called **list slicing**, selecting multiple values in the list using their position.
 
@@ -911,7 +905,7 @@ Same thing with list of strings
 
 Python stores associate arrays using the **dictionary** data structure. Python dictionaries consist of key-value pairs, where the key is working as an identifier or index. To put that another way, a dictionary is a mapping between a set of indeces (keys) and a set of values. Each key maps to a value, and the association of a key and a value is called a **key-value pair**.
 
-Some dictionary syntax we encountered previously in this lab>
+Some dictionary syntax we encountered previously in this lab:
 
 ```Python
 # create dictionary
@@ -1085,9 +1079,7 @@ For more on tuples in Python:
 
 ## Sets
 
-SET DIAGRAM
-
-<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_Array_Comparison.png?raw=true" width="500"></p>
+<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_sets.jfif?raw=true" width="500"></p>
 
 A set is an unordered collection of unique objects. Sets are primarily used to see if an object or value is in the collection (membership). Python supports a number of set operations, but one of the primary uses is to test for membership.
 
