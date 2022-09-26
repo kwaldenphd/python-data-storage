@@ -18,6 +18,8 @@ For more on array structures:
 - Kenneth Leroy Busbee and Dave Braunschweig, "[Arrays and Lists](https://press.rebus.community/programmingfundamentals/chapter/arrays-and-lists/)" in *Programming Fundamentals*
 
 ## Dictionaries
+- Python stores associate arrays using the **dictionary** data structure. Python dictionaries consist of key-value pairs, where the key is working as an identifier or index. To put that another way, a dictionary is a mapping between a set of indeces (keys) and a set of values. Each key maps to a value, and the association of a key and a value is called a **key-value pair**.
+- For more on dictionaries in Python: [W3Schools, Python Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp)
 
 ## Index, Indexing
 - In Python, **indexing** allows us to refer to individual values in specific data structures using their position. NOTE: Python (and many other programming languages) are **zero-indexed**, which means counting for index positions begins at `0`.
@@ -73,8 +75,6 @@ for number in numbers:
  print(number)
 ```
 
-## Key-Value Pairs
-
 ## Lists
 - "An array is a data structure consisting of a collection of elements (values or variables), each identified by at least one array index or key...In Python, the built-in array data structure is a list" (Busbee and Braunschweig, "[Arrays and Lists](https://press.rebus.community/programmingfundamentals/chapter/arrays-and-lists/)")
 - An list is a single-dimension array
@@ -108,8 +108,6 @@ A few other preliminary notes on lists in Python:
 - We can sort elements in a list using `.sort()`, `sorted()`, and `.reverse()`
 - We can access descriptive statistics for list values using `sum()`, `max()`, and `min()`
 
-TABLE WITH LIST METHODS
-
 More on arrays/lists (general):
 - Kenneth Leroy Busbee and Dave Braunschweig, "[Arrays and Lists](https://press.rebus.community/programmingfundamentals/chapter/arrays-and-lists/)" in *Programming Fundamentals*
 
@@ -117,6 +115,21 @@ More on lists in Python:
 - [W3Schools, Python Lists](https://www.w3schools.com/python/python_lists.asp)
 
 ## Nested Lists, Sublists
+- Lists in Python can also contain other lists- this is referred to as nested lists or sub-lists. Syntax for selecting items or values within a nested list: `list_name[list_item_number][sublist_item_number]`
+
+```Python
+# create list with two sub-lists
+points = [[0, 1], [2, 3]]
+
+# show list
+points
+
+# access first item on list, which is a sublist
+points[0]
+
+# access first item WITHIN second item on list
+points[1][0]
+```
 
 ## Sets
 - A set is an unordered collection of unique objects. Sets are primarily used to see if an object or value is in the collection (membership). Python supports a number of set operations, but one of the primary uses is to test for membership.
