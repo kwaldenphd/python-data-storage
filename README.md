@@ -5,15 +5,36 @@
 ## Lab Overview & Goals
 
 This lab provides an overview of foundational programming concepts in the areas of data structures and data storage, with a focus on Python syntax. Topics covered include:
-- Data types
-- Comments
-- Variables & assignment operators
-- Arithmetic operators
-- Concatenation
-- Input/Output
-- Converting data types
+- Linear and associative arrays
+- Indexing
+- String objects and methods
+- Lists and list methods
+- Dictionaries
+- Tuples
+- Sets
 
-ACKNOWLEDGEMENTS
+Specific skills covered in this lab include:
+- Utilize lists and strings in the Python programming language
+  * For strings, this includes creation, length and access, basic operations, and basic method arguments
+  * For lists, this includes creation, access, iteration, nesting, searching, concatenating, growing, deleting, sorting, and reversing
+- Understand and articulate the differences between lists and strings
+- Define dictionaries in the Python programming language
+- Practice utilizing dictionaries and sets in the Python programming language
+  * For dictionaries, this includes basic syntax, ordering, adding key-value pairs, updating, lists, and iteration
+  * For sets, this includes basic syntax, adding and removing, and testing for membership
+- Use Python methods and functions to work with dictionaries and sets
+
+## Acknowledgements
+
+Elements of this lab procedure were adapted from materials developed by:
+- [Dr. Peter Bui](http://www3.nd.edu/~pbui/) for the [CSE 10101 "Elements of Computing I" course](https://www3.nd.edu/~pbui/teaching/cdt.30010.fa16/).
+  * [Reading 05: Lists, Strings](https://www3.nd.edu/~pbui/teaching/cdt.30010.fa16/reading05.html)
+  * [Notebook 05: Lists, Strings](https://www3.nd.edu/~pbui/teaching/cdt.30010.fa16/notebook05.html)
+  * [Reading 06: Dictionaries, Sets](https://www3.nd.edu/~pbui/teaching/cdt.30010.fa16/reading06.html)
+- [Dr. Janet Davis](https://cs.whitman.edu/~davisj/) for the the [CSC 105 "The Digital Age" course](https://www.cs.grinnell.edu/~davisjan/csc/105/2012S/). 
+  * [Laboratory: Programming in Python](http://www.cs.grinnell.edu/~davisjan/csc/105/labs/python1.html)
+- [Dr. Corey Pennycuff](https://www3.nd.edu/~cpennycu/) for the [CSE 10101 Elements of Computing (Fall 2019)](https://www3.nd.edu/~cpennycu/2019/fa-CSE10101-CDT30010.html).
+- [Dr. Lindsay K. Mattock](http://lindsaymattock.net/) for the the [SLIS 5020 Computing Foundations course](http://lindsaymattock.net/computingfoundations.html). 
 
 # Table of Contents
 - [Key Concepts](#key-concepts)
@@ -24,11 +45,7 @@ ACKNOWLEDGEMENTS
   * [Associative Arrays](#associative-arrays)
 - [Data Structures in Python](#data-structures-in-python)
   * [Strings](#strings)
-    * [String Methods](#string-methods)
   * [Lists](#lists)
-    * [Nested Lists, or Lists With Sublists](#nested-lists-or-lists-with-sublists)
-    * [List Methods](#list-methods)
-    * [Looking Ahead](#looking-ahead)
   * [Dictionaries](#dictionaries)
   * [Tuples](#tuples)
   * [Sets](#sets)
@@ -42,9 +59,15 @@ ACKNOWLEDGEMENTS
 
 # Lab Notebook Template
 
+[Click here](https://replit.com/team/eoc-f22/Conditional-Statements-in-Python) to make a copy of the Replit template for this lab.
+
+Alternatives:
+- [`.py` template](https://drive.google.com/file/d/1WZSeR0PP4Vpuy6B37zBcSYxYxkMyOK-W/view?usp=sharing) (Google Drive, ND users)
+- [Jupyter Notebook, `.ipynb`](https://colab.research.google.com/drive/171iknHXXUMLEO-yyUCI1g-MbRAKFgAOv?usp=sharing) (Google Colab, ND users)
+
 # Overview
 
-PYTHON DATA TYPE DIAGRAM
+<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_Data_Structures.png?raw=true" width="500"></p>
 
 Up to this point, we've been working with what are called "primitive" data types in Python. These include `integer`, `float`, `string`, and `Boolean`.
 
@@ -56,7 +79,7 @@ TABLE WITH EXAMPLES/SYNTAX
 
 ## Linear Arrays
 
-ARRAY DIAGRAM
+<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/One_Dimensional_Array.jpg?raw=true" width="500"></p>
 
 "An array is a data structure consisting of a collection of elements (values or variables), each identified by at least one array index or key. Depending on the language, array types may overlap (or be identified with) other data types that describe aggregates of values, such as lists and strings. Array types are often implemented by array data structures, but sometimes by other means, such as hash tables, linked lists, or search trees" (Busbee and Braunschweig, "[Arrays and Lists](https://press.rebus.community/programmingfundamentals/chapter/arrays-and-lists/)")
 
@@ -76,7 +99,7 @@ Those properties include:
 
 How these properties show up for Python's built-in data structures:
 
-PYTHON ARRAY COMPARISON DIAGRAM
+<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_Array_Comparison.png?raw=true" width="500"></p>
 
 Each structure has its own specific vocabulary and syntax, but some common operations we can use with these structures:
 - Getting number of values in the structure (using the `len()` function)
@@ -88,6 +111,8 @@ Each structure has its own specific vocabulary and syntax, but some common opera
 ### Index/Indexing and Counting in Python
 
 DIAGRAM
+
+<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_Data_Structures.png?raw=true" width="500"></p>
 
 In Python, **indexing** allows us to refer to individual values in specific data structures using their position.
 
@@ -183,6 +208,8 @@ message[-1]
 
 DIAGRAM
 
+<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_Data_Structures.png?raw=true" width="500"></p>
+
 The other primary type of array we can encounter is an **associative array**, "an abstract data type that stores a collection of (key, value) pairs, such that each possible key appears at most once in the collection" ([Wikpedia, Associative Array](https://en.wikipedia.org/wiki/Associative_array))
 
 Python stores associate arrays using the **dictionary** data structure. Python dictionaries consist of key-value pairs, where the key is working as an identifier or index.
@@ -234,7 +261,7 @@ print(english_to_french.values())
 
 # Data Structures in Python
 
-PYTHON DATA TYPES DIAGRAM
+<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_Data_Structures.png?raw=true" width="500"></p>
 
 Before we dive into more detail on these data structures in Python, remember some properties include:
 - Mutable: Can values in the structure be changed once it has been created or assigned to a variable?
@@ -244,7 +271,7 @@ Before we dive into more detail on these data structures in Python, remember som
 
 How these properties show up for Python's built-in data structures:
 
-PYTHON ARRAY COMPARISON DIAGRAM
+<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_Array_Comparison.png?raw=true" width="500"></p>
 
 Each structure has its own specific vocabulary and syntax, but some common operations we can use with these structures:
 - Getting number of values in the structure (using the `len()` function)
@@ -684,6 +711,8 @@ print(numbers)
 
 SLICING DIAGRAM
 
+<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_Array_Comparison.png?raw=true" width="500"></p>
+
 We can also modify a list using a technique called **list slicing**, selecting multiple values in the list using their position.
 
 In Python, we use a combination of index operators `[]` and index values for list slicing.
@@ -698,7 +727,6 @@ print(dorms[0:3])
 
 For more on list slicing in PythoN:
 - [Geeks for Geeks, "Python List Slicing"](https://www.geeksforgeeks.org/python-list-slicing/)
-
 
 #### Searching & Sorting
 
@@ -879,6 +907,8 @@ Same thing with list of strings
 
 ## Dictionaries
 
+<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Key_Value_2.png?raw=true" width="500"></p>
+
 Python stores associate arrays using the **dictionary** data structure. Python dictionaries consist of key-value pairs, where the key is working as an identifier or index. To put that another way, a dictionary is a mapping between a set of indeces (keys) and a set of values. Each key maps to a value, and the association of a key and a value is called a **key-value pair**.
 
 Some dictionary syntax we encountered previously in this lab>
@@ -1057,6 +1087,8 @@ For more on tuples in Python:
 
 SET DIAGRAM
 
+<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_Array_Comparison.png?raw=true" width="500"></p>
+
 A set is an unordered collection of unique objects. Sets are primarily used to see if an object or value is in the collection (membership). Python supports a number of set operations, but one of the primary uses is to test for membership.
 
 We can use the `in` operator to test for membership with a set.
@@ -1118,7 +1150,7 @@ Dive into documentation- compare across two structures, compare and also throw i
 
 # Putting It All Together
 
-TABLE COMPARISON
+<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_Array_Comparison.png?raw=true" width="500"></p>
 
 CHALLENGE QUESTIONS
 
@@ -1138,3 +1170,10 @@ Allen Downey, *[Think Python: How To Think Like a Computer Scientist](https://ww
 Section 3.1 from Chapter 3 "Built-in Data Structures, Functions, and Files" in Wes McKinney's *[Python for Data Analysis, 3rd edition](https://www.oreilly.com/library/view/python-for-data/9781098104023/)* (O'Reilly, 2022): 51-68.
 
 # Lab Notebook Questions
+
+[Click here](https://replit.com/team/eoc-f22/Conditional-Statements-in-Python) to make a copy of the Replit template for this lab.
+
+Alternatives:
+- [`.py` template](https://drive.google.com/file/d/1WZSeR0PP4Vpuy6B37zBcSYxYxkMyOK-W/view?usp=sharing) (Google Drive, ND users)
+- [Jupyter Notebook, `.ipynb`](https://colab.research.google.com/drive/171iknHXXUMLEO-yyUCI1g-MbRAKFgAOv?usp=sharing) (Google Colab, ND users)
+
