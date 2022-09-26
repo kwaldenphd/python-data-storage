@@ -1,18 +1,40 @@
 # Data Structures in Python
 
-CC STATEMENT
+<a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license"><img style="border-width: 0;" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" alt="Creative Commons License" /></a>This tutorial was written by Katherine Walden and is licensed under a <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
-GOALS/OVERVIEW
+## Lab Overview & Goals
+
+This lab provides an overview of foundational programming concepts in the areas of data structures and data storage, with a focus on Python syntax. Topics covered include:
+- Data types
+- Comments
+- Variables & assignment operators
+- Arithmetic operators
+- Concatenation
+- Input/Output
+- Converting data types
 
 ACKNOWLEDGEMENTS
 
 # Table of Contents
-- [Lecture & Live Coding](#lecture--live-coding)
 - [Key Concepts](#key-concepts)
 - [Lab Notebook Template](#lab-notebook-template)
-
-
-# Lecture & Live Coding
+- [Overview](#overview)
+  * [Linear Arrays](#linear-arrays)
+  * [Indexing in Python](#indexing-in-python)
+  * [Associative Arrays](#associative-arrays)
+- [Data Structures in Python](#data-structures-in-python)
+  * [Strings](#strings)
+    * [String Methods](#string-methods)
+  * [Lists](#lists)
+    * [Nested Lists, or Lists With Sublists](#nested-lists-or-lists-with-sublists)
+    * [List Methods](#list-methods)
+    * [Looking Ahead](#looking-ahead)
+  * [Dictionaries](#dictionaries)
+  * [Tuples](#tuples)
+  * [Sets](#sets)
+- [Putting It All Together](#putting-it-all-together)
+- [Additional Resources](#additional-resources)
+- [Lab Notebook Questions](#lab-notebook-questions)
 
 # Key Concepts
 
@@ -20,7 +42,7 @@ ACKNOWLEDGEMENTS
 
 # Lab Notebook Template
 
-# BIG PICTURE PSEUDOCODE OVERVIEW
+# Overview
 
 PYTHON DATA TYPE DIAGRAM
 
@@ -210,7 +232,7 @@ print(english_to_french.values())
 
 ## Application
 
-# Specific Data Structures
+# Data Structures in Python
 
 PYTHON DATA TYPES DIAGRAM
 
