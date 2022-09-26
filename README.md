@@ -67,7 +67,7 @@ Alternatives:
 
 # Overview
 
-<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_Data_Structures.png?raw=true" width="500"></p>
+<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_Data_Structures.png?raw=true" width="1000"></p>
 
 Up to this point, we've been working with what are called "primitive" data types in Python. These include `integer`, `float`, `string`, and `Boolean`.
 
@@ -257,7 +257,7 @@ print(english_to_french.values())
 
 # Data Structures in Python
 
-<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_Data_Structures.png?raw=true" width="500"></p>
+<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_Data_Structures.png?raw=true" width="1000"></p>
 
 Before we dive into more detail on these data structures in Python, remember some properties include:
 - Mutable: Can values in the structure be changed once it has been created or assigned to a variable?
@@ -1079,7 +1079,7 @@ For more on tuples in Python:
 
 ## Sets
 
-<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_sets.jfif?raw=true" width="500"></p>
+<p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_sets.jpg?raw=true" width="500"></p>
 
 A set is an unordered collection of unique objects. Sets are primarily used to see if an object or value is in the collection (membership). Python supports a number of set operations, but one of the primary uses is to test for membership.
 
