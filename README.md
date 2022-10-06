@@ -59,11 +59,11 @@ Elements of this lab procedure were adapted from materials developed by:
 
 # Lab Notebook Template
 
-[Click here](https://replit.com/team/eoc-f22/Conditional-Statements-in-Python) to make a copy of the Replit template for this lab.
+[Click here]() to make a copy of the Replit template for this lab.
 
 Alternatives:
-- [`.py` template](https://drive.google.com/file/d/1WZSeR0PP4Vpuy6B37zBcSYxYxkMyOK-W/view?usp=sharing) (Google Drive, ND users)
-- [Jupyter Notebook, `.ipynb`](https://colab.research.google.com/drive/171iknHXXUMLEO-yyUCI1g-MbRAKFgAOv?usp=sharing) (Google Colab, ND users)
+- [`.py` template]() (Google Drive, ND users)
+- [Jupyter Notebook, `.ipynb`]() (Google Colab, ND users)
 
 # Overview
 
@@ -75,7 +75,13 @@ But we can imagine scenarios where we want to be able to work with more complex 
 
 In this lab, we're going to focus on some of the one-dimensional (or linear) data structures available to us in Python. These include `strings`, `lists`, `tuples`, `sets`, and `dictionaries`.
 
-TABLE WITH EXAMPLES/SYNTAX
+<table><tr><th>Name</th><th>Syntax</th><th>Example</th><th>Description</th></tr>
+  <tr><td>String</td><td><code>str(), ""</code><td><code>"Hello world!"</code></td><td>Sequence of characters</td></tr>
+  <tr><td>List</td><td><code>list(), []</code><td><code>["apple", "banana", "pear"], [1, 3, 5, 7]</code></td><td>Sequence of objects/values</td></tr>
+  <tr><td>Dictionary</td><td><code>dict(), {}</code><td><code>{'first_name': 'Knute', 'last_name':'Rockne', 'class':'1918'}</code></td><td>Key-value pairs</td></tr>
+  <tr><td>Set</td><td><code>set(), {}</code><td><code>{"apple", "banana", "pear"}, {1, 3, 5, 7}</code></td><td>Unordered group of unique values</td></tr> 
+  <tr><td>Tuple</td><td><code>tuple(), ()</code><td><code>("apple", "banana", "pear"), (1, 3, 5, 7)</code></td><td>Ordered group of values that can include duplicates</td></tr>
+  </table>
 
 ## Linear Arrays
 
@@ -180,6 +186,8 @@ We can test for membership using the `in` and `not in` operators.
 
 The `in` and `not in` operators return Boolean `True` or `False` values.
 
+For more on Python's membership operators: [W3Schools, Python Membership Operators](https://www.w3schools.com/python/gloss_python_membership_operators.asp)
+
 We can also use this index syntax with string objects.
 
 ```Python
@@ -250,17 +258,6 @@ print(english_to_french.keys())
 # output values
 print(english_to_french.values())
 ```
-
-## Comprehension Check
-
-<table>
- <tr><td>
-<img src="https://github.com/kwaldenphd/internet/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
-  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLScSkaWhsSyESi3YFkRs07jWDAvdkxtRwn9ZktVVlr4X829kDw/viewform?usp=sf_link">Linear & Associative Arrays Comprehension Check</a></td>
-  </tr>
-  </table>
-
-## Application
 
 # Data Structures in Python
 
@@ -472,33 +469,24 @@ More on strings in Python:
   </tr>
   </table>
 
-String properties
-
-Creating string, converting to string
-
-What method(s) could we use to accomplish X
-- capitalization
-- test for membership
-- access via index/return index
-
 ### Application
 
-Q6: Write a program that converts integer, float, or boolean values to a string, using the str() function.
+Q1: Write a program that converts integer, float, or boolean values to a string, using the `str()` function.
 
-Q7: Write a program that prompts the user to enter a 6-letter word, and then prints the first, third, and fifth letters of that word.
+Q2: Write a program that prompts the user to enter a 6-letter word, and then prints the first, third, and fifth letters of that word.
 
-Q8: Modify the program to have it search for other characters in the string. Does it always return the index number you expect? What index is returned if you ask for the index of the letter u (i.e., what happens when the desired character appears more than once in the string)?
+Q3: Modify the program provided below to search for the character `q` or `u` in the string. Does it always return the index number you expect? What index is returned if you ask for the index of the letter u (i.e., what happens when the desired character appears more than once in the string)?
 
 ```Python
 # program you're modifying for Q8
 # assign string variable
 color = "turquoise"
 
-# get index number of q character
-index_number = color.index("q")
+# get index number of t character
+index_number = color.index("t")
 
 # show index number as part of print statement
-print ("The index number for the letter q within the word " + color + " is " + index_number)
+print ("The index number for the letter t within the word " + color + " is " + index_number)
 ```
 
 ## Lists
@@ -600,14 +588,6 @@ points[1][0]
 ```
 
 We would also use the double bracket syntax to modify a sublist or a value within a sublist.
-
-```Python
-# add sublist to list
-points.append([3, 5])
-
-# show updated list
-points
-```
 
 ```Python
 # modify second value in last sublist
@@ -729,7 +709,7 @@ In Python, we use a combination of index operators `[]` and index values for lis
 # list of strings
 dorms = ["alumni", "badin", "baumer", "breen-phillips", "carroll", "cavanaugh", "dillon", "duncan", "dunne", "farley", "fisher", "flaherty", "howard", "johnson", "keenan", "keough", "knott", "lewis", "lyons", "mcglinn", "morrissey", "oneill", "pangborn", "pasquerilla east", "pasquerilla west", "ryan", "st. edward's", "sigfried", "sorin", "stanford", "walsh", "welsh", "zahm"]
 
-# use list slicing to show first 5 strings
+# use list slicing to show first 3 strings
 print(dorms[0:3])
 ```
 
@@ -829,7 +809,20 @@ print("The sum of the values in this list is ", str(sum(numbers)))
 
 #### Additional Resources
 
-TABLE WITH LIST METHODS
+List methods:
+- Creating a list: `[]` or `list()`
+- Checking length of list: `len()`
+- Accessing values using index: `fruits[0]`, `fruits.index("cherry")`
+- Testing for membership: `in` or `not in`
+- Modifying an existing list value: `fruits[1] = "new value"`
+- Appending a value to a list: `numbers.append(13)`
+- Inserting a value in a specific position: `numbers.insert(4, 11)`
+- Extending a list (to include additional values): `numbers.extend(num2)`
+- Removing values from a list: `numbers.remove(19)`, `numbers.pop(-1)`, `del numbers[7]`
+- Slicing a list: `dorms[0:3]`
+- Searching for values: `.count()`, `.index()`
+- Sorting: `.sort()`, `.sorted()`, `.reverse()`
+- Summary statistics: `.max()`, `.min()`, `.sum()`
 
 More on arrays/lists (general):
 - Kenneth Leroy Busbee and Dave Braunschweig, "[Arrays and Lists](https://press.rebus.community/programmingfundamentals/chapter/arrays-and-lists/)" in *Programming Fundamentals*
@@ -884,41 +877,46 @@ Again, more to come on loops and iteration.
   </tr>
   </table>
 
-List properties
-
-Creating list
-
-What method would we use to accomplish X:
-- Add to list
-- Remove from list
-- Sort list
-
-Nested list, list with  sublists- what's first value
-
 ### Application
 
-Q11: Create the list numbers with the following values: [[0, 1], [2, 3], [4, 5]].
+Q4: Write a program that creates a list of numbers. Use the arguments and syntax presented in this section of the lab to include code in your program that answers the following questions:
+- What is the length of your list? 
+- What is the number position for each of the items in your list? 
+- How would you return the value of the first item? 
+- How would you return the value of the last item?
 
-    What is the second element?
-    How would you change 4 to 'four'?
-    How would you change 1 to 'one'?
-    How would you print out each sub-list (one sub-list per line)?
-    How would you print out each number (one number per line)?
+Answer to this question includes program + comments that document process and explain your code.
 
-Q12: Create your own list of numbers. Include your list code as part of this question answer. What is the length of your list? What is the number position for each of the items in your list? How would you return the value of the first item? How would you return the value of the last item?
+Q5: Modify your Q4 program (working with the same list), using arguments and syntax covered in this section of the lab to accomplish the following tasks:
+- Add a new item to your list
+- Delete an item from your list
+- Sort your list in-place
+- Generate a sorted version of your list
+- Reverse your list in-place
+- Determine the min and max values for your list
 
-Q13: Using the same list from the previous question, write a program that includes the following steps or components:
+Answer to this question includes program + comments that document process and explain your code.
 
-    Adds a new item to your list
-    Deletes an item from your list
-    Sorts your list in-place
-    Generates a sorted version of your list
-    Reverses your list in-place
-    Determines the min and max values for your list
-    Selects a list element at random
-    Shuffles your list
+Q6: Write a program that creates a list with the following values: `[[0, 1], [2, 3], [4, 5]]`. Use the arguments and syntax presented in this section of the lab to include code in your program that answers the following questions:
+- What is the second element?
+- How would you change 4 to 'four'?
+- How would you change 1 to 'one'?
+- How would you print out each sub-list (one sub-list per line)?
+  * *HINT: Could a `for` loop be helpful for this task?*
+- How would you print out each number (one number per line)?
+  * *HINT: Could a `for` loop be helpful for this task?*
 
-Same thing with list of strings
+Answer to this question includes program + comments that document process and explain your code.
+
+Q7: Modify your Q6 program (working with the same list), using arguments and syntax covered in this section of the lab to accomplish the following tasks:
+- Add a new item to your list
+- Delete an item from your list
+- Sort your list in-place
+- Generate a sorted version of your list
+- Reverse your list in-place
+- Determine the min and max values for your list
+
+Answer to this question includes program + comments that document process and explain your code.
 
 ## Dictionaries
 
@@ -1042,24 +1040,15 @@ For more on dictionaries in Python:
   </tr>
   </table>
 
-Terminology, conceptual framework
-
-Creating them
-
-Syntax for ...
-- Accessing
-- Modifying
-- Adding
-
 ### Application
 
-Q1: Create a dictionary on a topic of your choosing. Include at least 7 key-value pairs.
+Q8: Write a program that creates a dictionary on a topic of your choosing. Include at least 5 key-value pairs. Use arguments and syntax covered in this section of the lab to accomplish the following tasks:
+- Add a new element to your dictionary
+- Update or modify an element in your dictionary
+- Print a list of all the keys in your dictionary
+- Print a list of all the values in your dictionary
 
-    Add new elements to your dictionary.
-    Update an element in your dictionary.
-    Print a list of all the keys in your dictionary.
-    Print a list of all the values in your dictionary.
-
+Answer to this question includes program + comments that document process and explain your code.
 
 ## Tuples
 
@@ -1159,35 +1148,65 @@ For more on sets in Python:
   </tr>
   </table>
 
-Creating, accessing, testing for membership
-
 ### Application (Tuples and Sets)
 
-Create tuple with something, do something with the tuple
+Q9: Write a program that creates a tuple with at least 4 values. Use arguments and syntax covered in this section of the lab to accomplish the following tasks:
+- Count the number of times a specific value appears
+- Return the index for a specific value
+- Access a value using its index
 
-Q2: Create the set `s` with the following values: `[1, 3, 5, 7, 9]`
-<ol type="a">
-  <li>Test to see if the value <code>11</code> is a member of the set.</li>
-  <li>Test to see if the value <code>7</code> is a member of the set.</li>
-  <li>Add a value to the set.</li>
-  <li>Remove a value from the set.</li>
- </ol>
+Answer to this question includes program + comments that document process and explain your code.
 
-Dive into documentation- compare across two structures, compare and also throw in lists
+Q10: Write a program that creates the set `s` with the following values: `[1, 3, 5, 7, 9]`. Use arguments and syntax covered in this section of the lab to accomplish the following tasks:
+- Test to see if the value `11` is a member of the set
+- Test to see if the value `7` is a member of the set
+- Add a value to the set
+- Remove a value from the set
+
+Answer to this question includes program + comments that document process and explain your code.
 
 # Putting It All Together
 
 <p align="center"><img src="https://github.com/kwaldenphd/python-data-structures/blob/main/images/Python_Array_Comparison.png?raw=true" width="500"></p>
 
-CHALLENGE QUESTIONS
+For these last few questions, you can use any of the data structures and arguments/syntax presented in this lab. As part of your answer, include a brief explanation for why you choose a particular data structure for the task.
 
-Something with dorms and gender assignment (or is this really a for loop)
+Q11: Write a program that asks a user to input their current or former Notre Dame residence hall and returns or outputs that hall's mascot ([link to table with list of halls and mascots](https://en.wikipedia.org/wiki/University_of_Notre_Dame_residence_halls#List)).
 
-User input and test for membership
+Sample output for this program:
 
-Something with even numbers (arithmetic operators and if-then)
+```
+Howard Hall's mascot is ducks!
+```
 
-Something with user inputs and squares 
+Answer to this question includes program + comments that document process and explain your code, as well as a brief explanation for the data structure/approach you chose for this program.
+
+Q12: In a previous lab, you wrote a program that asks the user to enter a color value and returns an output message indicating whether the color is a primary, secondary, or tertiary color (using a combination of the `input()` function, comparison operators, `if-then-else` logic, and Boolean logical operators).
+
+Primary colors:
+- Red
+- Yellow
+- Blue
+
+Secondary colors:
+- Green
+- Orange
+- Purple
+
+Tertiary colors:
+- Amber
+- Vermillion
+- Magenta
+- Violet
+- Teal
+- Chartreuse
+
+Let's revisit and rewrite this program- how could you approach this task using the data structures and syntax presented in this lab? 
+
+Answer to this question includes program + comments that document process and explain your code, as well as a brief explanation for the data structure/approach you chose for this program.
+
+Q13: Describe the five data structures covered in this lab (strings, lists, dictionaries, tuples, sets) in your own words. How are they similar? What are key differences? What kinds of tasks/contexts/problems would benefit from specific structures?
+- NOTE: You are welcome to include code as part of this answer, but a code component is not required.
 
 ## Additional Resources
 
