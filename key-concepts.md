@@ -1,14 +1,38 @@
 # Key Concepts
 
-Code things shown in this lab:
-- String function, string methods
-- List function, list creation syntax
-- Methods for modifying / interacting with a list
-- List utility functions
-- Tuple syntax
-- Dict function, dict creation syntax
-- Methods for modifying / interacting with a dictionary
 
+<table><tr><th>Name</th><th>Syntax</th><th>Example</th><th>Description</th></tr>
+  <tr><td>String</td><td><code>str(), ""</code><td><code>"Hello world!"</code></td><td>Sequence of characters</td></tr>
+  <tr><td>List</td><td><code>list(), []</code><td><code>["apple", "banana", "pear"], [1, 3, 5, 7]</code></td><td>Sequence of objects/values</td></tr>
+  <tr><td>Dictionary</td><td><code>dict(), {}</code><td><code>{'first_name': 'Knute', 'last_name':'Rockne', 'class':'1918'}</code></td><td>Key-value pairs</td></tr>
+  <tr><td>Set</td><td><code>set(), {}</code><td><code>{"apple", "banana", "pear"}, {1, 3, 5, 7}</code></td><td>Unordered group of unique values</td></tr> 
+  <tr><td>Tuple</td><td><code>tuple(), ()</code><td><code>("apple", "banana", "pear"), (1, 3, 5, 7)</code></td><td>Ordered group of values that can include duplicates</td></tr>
+  </table>
+  
+String methods:
+- `.count()` (returns number of times specific value appears in a string)
+- `.startswith()` (returns Boolean True/False value if string begins with specific value
+- `.endswith()` (returns Boolean True/False value if string ends with specific value)
+- `.find()` (returns index for specific value in string, searching left-to-right)
+- `.rfind()` (returns index for specific value in string, searching right-to-left)
+- `.index()` (returns index for specific value in string)
+- `.rfind()` (returns index for specific value in string, searching right-to-left)
+
+
+List methods:
+- Creating a list: `[]` or `list()`
+- Checking length of list: `len()`
+- Accessing values using index: `fruits[0]`, `fruits.index("cherry")`
+- Testing for membership: `in` or `not in`
+- Modifying an existing list value: `fruits[1] = "new value"`
+- Appending a value to a list: `numbers.append(13)`
+- Inserting a value in a specific position: `numbers.insert(4, 11)`
+- Extending a list (to include additional values): `numbers.extend(num2)`
+- Removing values from a list: `numbers.remove(19)`, `numbers.pop(-1)`, `del numbers[7]`
+- Slicing a list: `dorms[0:3]`
+- Searching for values: `.count()`, `.index()`
+- Sorting: `.sort()`, `.sorted()`, `.reverse()`
+- Summary statistics: `.max()`, `.min()`, `.sum()`
 
 ## Arrays
 - "An array is a data structure consisting of a collection of elements (values or variables), each identified by at least one array index or key. Depending on the language, array types may overlap (or be identified with) other data types that describe aggregates of values, such as lists and strings. Array types are often implemented by array data structures, but sometimes by other means, such as hash tables, linked lists, or search trees" (Busbee and Braunschweig, "[Arrays and Lists](https://press.rebus.community/programmingfundamentals/chapter/arrays-and-lists/)")
@@ -113,6 +137,22 @@ More on arrays/lists (general):
 
 More on lists in Python:
 - [W3Schools, Python Lists](https://www.w3schools.com/python/python_lists.asp)
+
+## Membership Operators
+- "Membership operators are used to test if a sequence is presented in an object" (W3Schools, [Python Membership Operators](https://www.w3schools.com/python/gloss_python_membership_operators.asp))
+
+The `in` and `not in` operators return Boolean `True` or `False` values.
+
+```Python
+# create list
+fruits = ["apple", "banana", "peach"]
+
+# test if apple is in list
+"apple" in fruits # returns true
+
+# test if blueberry is NOT in list
+"blueberry" not in fruits # returns false
+```
 
 ## Nested Lists, Sublists
 - Lists in Python can also contain other lists- this is referred to as nested lists or sub-lists. Syntax for selecting items or values within a nested list: `list_name[list_item_number][sublist_item_number]`
