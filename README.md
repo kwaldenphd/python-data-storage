@@ -53,17 +53,19 @@ Elements of this lab procedure were adapted from materials developed by:
 - [Additional Resources](#additional-resources)
 - [Lab Notebook Questions](#lab-notebook-questions)
 
+[Click here]() to access the lab procedure as a Jupyter Notebook.
+
 # Key Concepts
 
 [Click here](https://github.com/kwaldenphd/python-data-storage/blob/main/key-concepts.md) for a full list of key concepts and definitions for this lab.
 
 # Lab Notebook Template
 
-[Click here]() to make a copy of the Replit template for this lab.
+[Click here](https://replit.com/team/eoc-f22/Data-Storage-in-Python) to make a copy of the Replit template for this lab.
 
 Alternatives:
-- [`.py` template]() (Google Drive, ND users)
-- [Jupyter Notebook, `.ipynb`]() (Google Colab, ND users)
+- [`.py` template](https://drive.google.com/file/d/1U7nten_7sfrBznMQfuiBq0kDRvJ77yzU/view?usp=sharing) (Google Drive, ND users)
+- [Jupyter Notebook, `.ipynb`](https://colab.research.google.com/drive/1CFH4_ujHmTHoDe6Rrv82UeFHYq6rVMKp?usp=sharing) (Google Colab, ND users)
 
 # Overview
 
@@ -1217,11 +1219,11 @@ Section 3.1 from Chapter 3 "Built-in Data Structures, Functions, and Files" in W
 
 # Lab Notebook Questions
 
-[Click here](https://replit.com/team/eoc-f22/Conditional-Statements-in-Python) to make a copy of the Replit template for this lab.
+[Click here](https://replit.com/team/eoc-f22/Data-Storage-in-Python) to make a copy of the Replit template for this lab.
 
 Alternatives:
-- [`.py` template](https://drive.google.com/file/d/1WZSeR0PP4Vpuy6B37zBcSYxYxkMyOK-W/view?usp=sharing) (Google Drive, ND users)
-- [Jupyter Notebook, `.ipynb`](https://colab.research.google.com/drive/171iknHXXUMLEO-yyUCI1g-MbRAKFgAOv?usp=sharing) (Google Colab, ND users)
+- [`.py` template](https://drive.google.com/file/d/1U7nten_7sfrBznMQfuiBq0kDRvJ77yzU/view?usp=sharing) (Google Drive, ND users)
+- [Jupyter Notebook, `.ipynb`](https://colab.research.google.com/drive/1CFH4_ujHmTHoDe6Rrv82UeFHYq6rVMKp?usp=sharing) (Google Colab, ND users)
 
 Q1: Write a program that converts integer, float, or boolean values to a string, using the `str()` function.
 
