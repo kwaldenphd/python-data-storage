@@ -53,7 +53,7 @@ Elements of this lab procedure were adapted from materials developed by:
 - [Additional Resources](#additional-resources)
 - [Lab Notebook Questions](#lab-notebook-questions)
 
-[Click here]() to access the lab procedure as a Jupyter Notebook.
+[Click here](https://colab.research.google.com/drive/1FCC2zeNhio87yvIBuNPrFZvvLzBK_WJG?usp=sharing) to access the lab procedure as a Jupyter Notebook.
 
 # Key Concepts
 
